@@ -1,0 +1,71 @@
+body {
+  width: 100%;
+}
+
+.top-header {
+  position: sticky;
+  top: 0;
+  left: 10%;
+  z-index: 10000;
+}
+
+#set-logo {
+  font-family: cursive;
+  font-style: oblique;
+  font-size: 1.9rem;
+  color: rgb(243, 229, 151);
+  text-shadow: 0 0 7px red, 0 0 7px rgb(245, 133, 6);
+}
+
+.navbar-button {
+  background-color: rgba(241, 212, 156, 255);
+  border-radius: 5px;
+  border: 2px solid brown;
+  color: #80391e;
+  font-size: 1.3rem;
+}
+
+.navbar-button:hover {
+  background-color: rgba(233, 151, 72, 255);
+}
+
+.dropdown {
+  display: inline-block;
+  z-index: 3;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fcf3e0;
+  min-width: 110px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 6px 6px;
+  text-decoration: none;
+  display: block;
+  border-radius: 5px;
+  border: 0.6px solid #efca7e;
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(233, 151, 72, 255);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#home-active,
+#rule-active,
+#game-active {
+  color: red;
+}
+
+.mr-auto {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}

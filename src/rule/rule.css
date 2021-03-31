@@ -1,0 +1,37 @@
+.rule-display {
+  overflow: auto;
+  height: 700px;
+  background-color: rgb(252, 239, 206);
+  padding: 3%;
+  border-radius: 1%;
+}
+
+#easy-card {
+  width: 45%;
+  height: 35%;
+  border-radius: 3%;
+  border: 2px solid brown;
+  margin-bottom: 1.5%;
+}
+
+#medium-card {
+  width: 50%;
+  height: 55%;
+  border-radius: 3%;
+  border: 2px solid brown;
+}
+
+.set-sample {
+  width: 35%;
+  border: 2px solid brown;
+  border-radius: 3%;
+}
+
+.fa-grin-alt,
+.fa-lightbulb {
+  color: red;
+}
+
+.fa-frown {
+  color: blue;
+}

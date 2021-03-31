@@ -1,0 +1,135 @@
+.game-result {
+  width: 100%;
+  position: sticky;
+  top: 72px;
+  z-index: 2;
+}
+
+.game-record {
+  position: sticky;
+  top: 140px;
+  background-color: #d9f4ec;
+  height: fit-content;
+  padding: 2%;
+  border-radius: 1%;
+  font: 100% Comic Sans MS;
+  position: sticky;
+  top: 140px;
+  margin-bottom: 2%;
+}
+
+.game-record .icon {
+  display: none;
+}
+.game-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.record-button {
+  background-color: rgba(241, 212, 156, 255);
+  border-radius: 5px;
+  width: 100%;
+  border: none;
+  color: rgb(106, 67, 67);
+  margin-top: 2%;
+}
+.record-button:hover {
+  background-color: rgb(225, 222, 194);
+}
+
+@media screen and (max-width: 600px) {
+  .game-record {
+    width: 40%;
+  }
+  .game-record div:not(:first-child) {
+    display: none;
+  }
+  .game-record a.icon {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .game-record.responsive {
+    width: 100%;
+  }
+
+  .game-record.responsive div {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+.game-cards {
+  position: sticky;
+  top: 400px;
+  overflow: auto;
+  height: 550px;
+  border-radius: 1%;
+  z-index: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 240, 202);
+}
+
+.card {
+  height: 120px;
+  width: 150px;
+  margin: 25px;
+  box-shadow: 5px 5px 5px #888888;
+}
+
+.place-holder {
+  height: 120px;
+  width: 150px;
+  margin: 25px;
+  box-shadow: 5px 5px 5px rgb(255, 240, 202);
+}
+
+.card-content {
+  width: 80%;
+  position: relative;
+  left: 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.one-item {
+  position: relative;
+  left: 30%;
+}
+
+.two-items {
+  position: relative;
+  left: 9%;
+}
+
+@media only screen and (max-device-width: 600px) {
+  .game-display {
+    flex-direction: column;
+  }
+  .game-cards {
+    width: 100%;
+  }
+  .game-buttons {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .record-button {
+    width: auto;
+    margin: 5px;
+  }
+  .card {
+    height: 120px;
+    width: 150px;
+    margin: 7px;
+  }
+}
